@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2024 at 11:24 AM
+-- Generation Time: Oct 11, 2024 at 10:07 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -203,14 +203,19 @@ CREATE TABLE `m_user` (
 --
 
 INSERT INTO `m_user` (`user_id`, `level_id`, `username`, `nama`, `password`, `created_at`, `updated_at`) VALUES
-(1, 1, 'admin', 'Administrator', '$2y$12$ZQpnLIYjljOErlO88EHniO.rBJXTHFkG8NVeMdpXMWd4fz3tYNKDu', NULL, NULL),
+(1, 1, 'admin', 'Administrator', '$2y$12$z3b3567nVdnR2cJyRKhAcu3iJSXsLucCzDo3xBjLmuqUr8gSsTI.G', NULL, '2024-10-08 20:47:36'),
 (2, 2, 'manager', 'Manager', '$2y$12$FhQmFBRvJheyfTGkzHQB4uoi.ai4gnarXVbJcWUXKD9tAOku84mpi', NULL, NULL),
-(3, 3, 'staff', 'Staff/Kasir', '$2y$12$TtHBkbrUTEp9bl3M724Z.OQpeTh2j/FsIbsGdgNZJQOMhVcV/MOdC', NULL, NULL),
+(3, 3, 'staff', 'Staff/Kasir', '$2y$12$UFwcSe3c56w6gbGij4Qa/uJQ6tfL4.jtGdfAoEzIItBnnWbMAgZVS', NULL, '2024-10-08 20:48:04'),
 (11, 2, 'manager_dua', 'Manager 2', '$2y$12$DKitKKoAmYT2r7kS0crn3uFZOry46alr6xSVyHGM7K5wKUbwWFn56', '2024-09-17 17:43:38', '2024-09-17 17:43:38'),
 (12, 2, 'manager22', 'Manager Dua Dua', '$2y$12$K6OeIwOVOxyFjMLkndUKdewb5NQG.3.eUHjHjm4X84Dw3hEhz/fWO', '2024-09-19 22:41:48', '2024-09-19 22:41:48'),
 (13, 2, 'manager33', 'Manager Tiga TIga', '$2y$12$PxbqS.N8G08pYm3mloscUOdorj4TcJxomg0HY/fqO2edJxNqOyyVa', '2024-09-19 23:01:23', '2024-09-19 23:01:23'),
 (14, 2, 'manager45', 'Manager44', '$2y$12$22RViaAFiBIhCI/ZuM694.w4pgLv9JkG5x8kFAitlp4rtBRIe5eqi', '2024-09-20 08:48:56', '2024-09-20 08:48:56'),
-(15, 2, 'manager12', 'Manager11', '$2y$12$gpiRvv.Sc/bsk4rjVD20Geob4fuhq5sY9XNo9Zb8bISqb3PLB/.g.', '2024-09-20 08:51:06', '2024-09-20 08:51:06');
+(15, 2, 'manager12', 'Manager11', '$2y$12$gpiRvv.Sc/bsk4rjVD20Geob4fuhq5sY9XNo9Zb8bISqb3PLB/.g.', '2024-09-20 08:51:06', '2024-09-20 08:51:06'),
+(24, 2, 'm123', 'Fa\'iz', '$2y$12$cB1VdeNIzPBokTc.UPJp8OOI9rxEY6f2ByIobu2Rw.RIyOsp7RK4e', '2024-10-01 20:56:51', '2024-10-08 20:47:50'),
+(26, 1, 'MasAdmin', 'paes', '$2y$12$nNDqR1Xt5vn5aqDAQr32WukWQzlHrCxBqDYuPTRuOXcvcRpttfc1S', '2024-10-08 19:09:40', '2024-10-08 19:09:40'),
+(27, 4, 'MbahMase', 'Mbah Ian', '$2y$12$3IaNnqfwLNdaN0x9wPPVkOLzx0/rG7c.24m94pxbLgGu5RgUISani', '2024-10-08 20:48:59', '2024-10-08 20:48:59'),
+(28, 2, 'PakManager', 'Pak Paes', '$2y$12$P4K4sEolTrSzm7rsdUa1Ge55wlBiDZsL0wpAghaGiwwITH1WWrD5G', '2024-10-08 21:05:04', '2024-10-08 21:05:04'),
+(29, 3, 'PendudukBumi', 'Manusia Purba', '$2y$12$homjVnaT/5YAEGdnQTMApezHX6GpCuXcCX3byl3JYgyhQNKibU29y', '2024-10-08 21:06:02', '2024-10-08 21:10:10');
 
 -- --------------------------------------------------------
 
@@ -502,31 +507,31 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `m_barang`
 --
 ALTER TABLE `m_barang`
-  MODIFY `barang_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `barang_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `m_kategori`
 --
 ALTER TABLE `m_kategori`
-  MODIFY `kategori_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `kategori_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `m_level`
 --
 ALTER TABLE `m_level`
-  MODIFY `level_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `level_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `m_supplier`
 --
 ALTER TABLE `m_supplier`
-  MODIFY `supplier_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `supplier_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `m_user`
 --
 ALTER TABLE `m_user`
-  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
