@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2024 at 10:07 AM
+-- Generation Time: Oct 16, 2024 at 03:23 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -215,7 +215,15 @@ INSERT INTO `m_user` (`user_id`, `level_id`, `username`, `nama`, `password`, `cr
 (26, 1, 'MasAdmin', 'paes', '$2y$12$nNDqR1Xt5vn5aqDAQr32WukWQzlHrCxBqDYuPTRuOXcvcRpttfc1S', '2024-10-08 19:09:40', '2024-10-08 19:09:40'),
 (27, 4, 'MbahMase', 'Mbah Ian', '$2y$12$3IaNnqfwLNdaN0x9wPPVkOLzx0/rG7c.24m94pxbLgGu5RgUISani', '2024-10-08 20:48:59', '2024-10-08 20:48:59'),
 (28, 2, 'PakManager', 'Pak Paes', '$2y$12$P4K4sEolTrSzm7rsdUa1Ge55wlBiDZsL0wpAghaGiwwITH1WWrD5G', '2024-10-08 21:05:04', '2024-10-08 21:05:04'),
-(29, 3, 'PendudukBumi', 'Manusia Purba', '$2y$12$homjVnaT/5YAEGdnQTMApezHX6GpCuXcCX3byl3JYgyhQNKibU29y', '2024-10-08 21:06:02', '2024-10-08 21:10:10');
+(29, 3, 'PendudukBumi', 'Manusia Purba', '$2y$12$homjVnaT/5YAEGdnQTMApezHX6GpCuXcCX3byl3JYgyhQNKibU29y', '2024-10-08 21:06:02', '2024-10-08 21:10:10'),
+(30, 1, 'MbaAdmin', 'Shan', '$2y$12$vaobZUWaJLtJcLY0cetzu.DBWTSF.P47XJkWQxalGfdkUkyfMCpZ2', '2024-10-15 08:47:10', '2024-10-15 08:47:10'),
+(31, 1, 'MbaAdmin123', 'Shannon', '$2y$12$TsXyHs81yrRTw3YmRmtYoeRQQMNWYC4n4jsnSAjFWZgzo/bJqUreu', '2024-10-15 08:48:58', '2024-10-15 08:48:58'),
+(32, 2, 'MasMana', 'Mana', '$2y$12$1F2I1cLDyHB9xehq.7KvFelnMCerY6iegOrSaOsW6OYyNT.LkXATu', '2024-10-15 08:51:36', '2024-10-15 08:51:36'),
+(33, 2, 'MasMana123', 'MasMana', '$2y$12$ZwTqM8XVaoCUOb0bKhYl2.vm82yhV85wLCtTb9QdMVjjRG7pExvge', '2024-10-15 08:52:24', '2024-10-15 08:52:24'),
+(34, 3, 'Mastah', 'Ian', '$2y$12$zaenClvgHS6CrHNCL71FMOZZ2MOv/MVA3XAb6DRUTmkDtbnL/bOWu', '2024-10-15 08:54:13', '2024-10-15 08:54:13'),
+(35, 3, 'Mastah123', 'Ian123', '$2y$12$UiwIRff.zmS3TNPZLhOQdea/aVwa2K9q/TSob90ZYQtobuMnW2aPK', '2024-10-15 09:00:07', '2024-10-15 09:00:07'),
+(36, 4, 'MasCus', 'Wildan', '$2y$12$i1JQaqDFBiggkFSjS7fTtOlgzabfGmrzpbne4s2va9vs9424dOvsy', '2024-10-15 18:06:55', '2024-10-15 18:06:55'),
+(37, 4, 'MasCUh', 'Ryan', '$2y$12$T5c3N6Whwkh0dWILO4SbNO/LSm63AIq0CKViS5Df9mJBnvpT9pDt.', '2024-10-15 18:10:34', '2024-10-15 18:10:34');
 
 -- --------------------------------------------------------
 
@@ -531,7 +539,7 @@ ALTER TABLE `m_supplier`
 -- AUTO_INCREMENT for table `m_user`
 --
 ALTER TABLE `m_user`
-  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `user_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
