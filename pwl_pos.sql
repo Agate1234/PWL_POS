@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `failed_jobs`
 --
 
+DROP TABLE IF EXISTS failed_jobs;
 CREATE TABLE `failed_jobs` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `uuid` varchar(255) NOT NULL,
@@ -43,6 +44,7 @@ CREATE TABLE `failed_jobs` (
 -- Table structure for table `migrations`
 --
 
+DROP TABLE IF EXISTS migrations;
 CREATE TABLE `migrations` (
   `id` int(10) UNSIGNED NOT NULL,
   `migration` varchar(255) NOT NULL,
@@ -77,6 +79,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- Table structure for table `m_barang`
 --
 
+DROP TABLE IF EXISTS m_barang;
 CREATE TABLE `m_barang` (
   `barang_id` bigint(20) UNSIGNED NOT NULL,
   `kategori_id` bigint(20) UNSIGNED NOT NULL,
@@ -107,7 +110,10 @@ INSERT INTO `m_barang` (`barang_id`, `kategori_id`, `barang_kode`, `barang_nama`
 (12, 4, 'IPD', 'iPad Pro', 17800000, 18000000, NULL, NULL),
 (13, 4, 'IPH', 'Iphone 15 Pro', 18000000, 19000000, NULL, NULL),
 (14, 4, 'AW9', 'Apple Watch Series 9', 8000000, 8500000, NULL, NULL),
-(15, 4, 'APP', 'AirPods Pro Gen 2', 4000000, 4500000, NULL, NULL);
+(15, 4, 'APP', 'AirPods Pro Gen 2', 4000000, 4500000, NULL, NULL),
+(19, 2, 'CRS', 'Honda Civic RS', 600000000, 615000000, '2024-10-20 03:02:30', NULL),
+(20, 2, 'V15', 'Honda Vario 150', 24000000, 25000000, '2024-10-20 03:02:30', NULL),
+(21, 2, 'V12', 'Honda Vario 125', 23000000, 24000000, '2024-10-20 03:02:30', NULL);
 
 -- --------------------------------------------------------
 
@@ -115,6 +121,7 @@ INSERT INTO `m_barang` (`barang_id`, `kategori_id`, `barang_kode`, `barang_nama`
 -- Table structure for table `m_kategori`
 --
 
+DROP TABLE IF EXISTS m_kategori;
 CREATE TABLE `m_kategori` (
   `kategori_id` bigint(20) UNSIGNED NOT NULL,
   `kategori_kode` varchar(10) NOT NULL,
@@ -140,6 +147,7 @@ INSERT INTO `m_kategori` (`kategori_id`, `kategori_kode`, `kategori_nama`, `crea
 -- Table structure for table `m_level`
 --
 
+DROP TABLE IF EXISTS m_level;
 CREATE TABLE `m_level` (
   `level_id` bigint(20) UNSIGNED NOT NULL,
   `level_kode` varchar(10) NOT NULL,
@@ -164,6 +172,7 @@ INSERT INTO `m_level` (`level_id`, `level_kode`, `level_nama`, `created_at`, `up
 -- Table structure for table `m_supplier`
 --
 
+DROP TABLE IF EXISTS m_supplier;
 CREATE TABLE `m_supplier` (
   `supplier_id` bigint(20) UNSIGNED NOT NULL,
   `supplier_kode` varchar(10) NOT NULL,
@@ -188,6 +197,7 @@ INSERT INTO `m_supplier` (`supplier_id`, `supplier_kode`, `supplier_name`, `supp
 -- Table structure for table `m_user`
 --
 
+DROP TABLE IF EXISTS m_user;
 CREATE TABLE `m_user` (
   `user_id` bigint(20) UNSIGNED NOT NULL,
   `level_id` bigint(20) UNSIGNED NOT NULL,
@@ -231,6 +241,7 @@ INSERT INTO `m_user` (`user_id`, `level_id`, `username`, `nama`, `password`, `cr
 -- Table structure for table `password_reset_tokens`
 --
 
+DROP TABLE IF EXISTS password_reset_tokens;
 CREATE TABLE `password_reset_tokens` (
   `email` varchar(255) NOT NULL,
   `token` varchar(255) NOT NULL,
@@ -243,6 +254,7 @@ CREATE TABLE `password_reset_tokens` (
 -- Table structure for table `personal_access_tokens`
 --
 
+DROP TABLE IF EXISTS personal_access_tokens;
 CREATE TABLE `personal_access_tokens` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `tokenable_type` varchar(255) NOT NULL,
@@ -262,6 +274,7 @@ CREATE TABLE `personal_access_tokens` (
 -- Table structure for table `t_penjualan`
 --
 
+DROP TABLE IF EXISTS t_penjualan;
 CREATE TABLE `t_penjualan` (
   `penjualan_id` bigint(20) UNSIGNED NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
@@ -294,6 +307,7 @@ INSERT INTO `t_penjualan` (`penjualan_id`, `user_id`, `pembeli`, `penjualan_kode
 -- Table structure for table `t_penjualan_detail`
 --
 
+DROP TABLE IF EXISTS t_penjualan_detail;
 CREATE TABLE `t_penjualan_detail` (
   `detail_id` bigint(20) UNSIGNED NOT NULL,
   `penjualan_id` bigint(20) UNSIGNED NOT NULL,
@@ -346,6 +360,7 @@ INSERT INTO `t_penjualan_detail` (`detail_id`, `penjualan_id`, `barang_id`, `har
 -- Table structure for table `t_stok`
 --
 
+DROP TABLE IF EXISTS t_stok;
 CREATE TABLE `t_stok` (
   `stok_id` bigint(20) UNSIGNED NOT NULL,
   `supplier_id` bigint(20) UNSIGNED NOT NULL,
@@ -384,6 +399,7 @@ INSERT INTO `t_stok` (`stok_id`, `supplier_id`, `barang_id`, `user_id`, `stok_ta
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS users;
 CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,

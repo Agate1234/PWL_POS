@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="{{ asset('adminlte/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
 
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('adminlte/dist/css/adminlte.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset(path: '../resources/css/custom.css') }}">
 </head>
 <body class="hold-transition login-page">
     <div class="login-box">
@@ -26,7 +29,7 @@
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
                 <a href="{{ url('/') }}" class="h1">
-                    <b>Admin</b>LTE
+                    <b>Ven</b>ture
                 </a>
             </div>
             <div class="card-body">

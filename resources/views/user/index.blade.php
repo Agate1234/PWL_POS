@@ -50,9 +50,6 @@
     
 @endsection
 
-@push('css')
-@endpush
-
 @push('js')
     <script>
         function modalAction(url = ''){
